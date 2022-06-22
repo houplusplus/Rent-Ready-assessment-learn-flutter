@@ -124,11 +124,13 @@ The page should contain:
 - 0 : Of course, install docker
 
 - 1 : In terminal navigate to the project's directory. Then 
-`docker build -t give_it_a_name`
+`docker build -t give_it_a_name .`
 
-- 2 : `docker run give_it_a_name`
+- 2 : `docker run  -d -p 1200 give_it_a_name` 1200 is a port, choose yours
 
-- 3 : the docker container will install flutter and dependencies, test flutter (using flutter doctor), build the project for web, install nginx, copy the built files to nginx's http folder then launch the web server
+- 3 : the docker container will install flutter and dependencies, test flutter (using flutter doctor), build the project for web, install nginx, copy the built files to nginx's http folder then launch the web server.
+
+- 4 : open your browser and go to localhost:1200 
 
  
 
