@@ -201,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return FutureBuilder(
         future: getAccounts(),
         builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
-          if (snapshot.hasData) {
+          if (!snapshot.hasData) {
             return const Scaffold(
               body: Center(
                 child: CircularProgressIndicator(),
