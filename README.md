@@ -102,3 +102,33 @@ The page should contain:
 
 
 
+# Running this project
+
+## Get and test the source code
+
+
+- 0 : If not done yet, install flutter, Visual Studio Code or your favorite IDE (Android Studio or XCode if you prefer). I used VSCode, install flutter plugin.
+
+- 1 : Download or clone this repository
+
+- 2 : Open the project in VSCode using File -> Open
+
+- 3 : The Flutter Plugin of VSCode will ask to get missing packages, accept:
+
+![Get packages image](/assets/packages.png)
+
+- 4 : VSCode Run -> Start Debugging.
+
+## Docker container
+
+- 0 : Of course, install docker
+
+- 1 : In terminal navigate to the project's directory. Then 
+`docker build -t give_it_a_name`
+
+- 2 : `docker run give_it_a_name`
+
+- 3 : the docker container will install flutter and dependencies, test flutter (using flutter doctor), build the project for web, install nginx, copy the built files to nginx's http folder then launch the web server
+
+ 
+
